@@ -63,6 +63,8 @@ class TddRomanNumerals < Minitest::Test
 		assert_equal("XL", 40.romanizer())
 	end
 
-	
+	def test_50_returns_L
+		assert_equal("L", 50.romanizer())
+	end
 end
 

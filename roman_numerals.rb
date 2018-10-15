@@ -14,11 +14,9 @@ class Integer
 		numerals.each do |key, value|
 			roman << key * (x/value)
 			x %= value
-
 		end
 		roman
 	end
-
 end
 
 
