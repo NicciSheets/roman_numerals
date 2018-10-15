@@ -85,6 +85,8 @@ class TddRomanNumerals < Minitest::Test
 
 	def test_900_returns_CM
 		assert_equal("CM", 900.romanizer())
+		assert_equal("CML", 950.romanizer())
+		assert_equal("CMXL", 940.romanizer())
 	end
 
 	def test_1000_returns_M
