@@ -82,7 +82,10 @@ class TddRomanNumerals < Minitest::Test
 	def test_500_returns_D
 		assert_equal("D", 500.romanizer())
 	end
-	
+
+	def test_900_returns_CM
+		assert_equal("CM", 900.romanizer())
+	end
 
 
 end
