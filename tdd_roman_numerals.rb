@@ -79,14 +79,21 @@ class TddRomanNumerals < Minitest::Test
 
 	def test_100_returns_C
 		assert_equal("C", 100.romanizer())
+		assert_equal("CIV", 104.romanizer())
+		assert_equal("CIX", 109.romanizer())
+		assert_equal("CXXX", 130.romanizer())
 	end
 
 	def test_400_returns_CD
 		assert_equal("CD", 400.romanizer())
+		assert_equal("CDIV", 404.romanizer())
+		assert_equal("CDL", 450.romanizer())
 	end
 
 	def test_500_returns_D
 		assert_equal("D", 500.romanizer())
+		assert_equal("DL", 550.romanizer())
+		assert_equal("DCCCIX", 809.romanizer())
 	end
 
 	def test_900_returns_CM
