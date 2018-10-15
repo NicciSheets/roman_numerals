@@ -36,4 +36,8 @@ class TddRomanNumerals < Minitest::Test
 	def test_9_is_IX
 		assert_equal("IX", 9.romanizer())
 	end
+
+	def test_10_is_X
+		assert_equal("X", 10.romanizer())
+	end
 end
