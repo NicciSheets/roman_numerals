@@ -22,4 +22,14 @@ class TddRomanNumerals < Minitest::Test
 	def test_4_equals_IV
 		assert_equal("IV", 4.romanizer())
 	end
+
+	def test_5_equals_V
+		assert_equal("V", 5.romanizer())
+	end
+
+	def test_6_thru_8_equals_VI_VII_VIII
+		assert_equal("VI", 6.romanizer())
+		assert_equal("VII", 7.romanizer())
+		assert_equal("VIII", 8.romanizer())
+	end
 end
