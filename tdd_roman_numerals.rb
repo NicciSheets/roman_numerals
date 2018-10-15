@@ -61,14 +61,20 @@ class TddRomanNumerals < Minitest::Test
 
 	def test_40_returns_XL
 		assert_equal("XL", 40.romanizer())
+		assert_equal("XLIV", 44.romanizer())
+		assert_equal("XLIX", 49.romanizer())
 	end
 
 	def test_50_returns_L
 		assert_equal("L", 50.romanizer())
+		assert_equal("LIV", 54.romanizer())
+		assert_equal("LIX", 59.romanizer())
 	end
 
 	def test_90_returns_XC
 		assert_equal("XC", 90.romanizer())
+		assert_equal("XCIV", 94.romanizer())
+		assert_equal("XCIX", 99.romanizer())
 	end
 
 	def test_100_returns_C
