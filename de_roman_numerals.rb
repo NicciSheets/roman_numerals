@@ -2,7 +2,9 @@ class String
 
 	def deromanizer()
 		arabic = {
+
 			"IV" => 4,
+			"V" => 5,
 			"I" => 1
 		}
 		result = 0
