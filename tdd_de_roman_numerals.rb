@@ -39,5 +39,8 @@ class TddDeRomanNumerals < Minitest::Test
 	def test_assert_XL_returns_40
 		assert_equal(40, "XL".deromanizer())
 	end
-	
+
+	def test_assert_L_returns_50
+		assert_equal(50, "L".deromanizer())
+	end
 end
