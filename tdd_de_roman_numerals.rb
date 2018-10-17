@@ -7,4 +7,7 @@ class TddDeRomanNumerals < Minitest::Test
 		assert_equal(1, 1)
 	end
 
+	def test_assert_I_equals_1
+		assert_equal(Integer, "I".deromanizer().class)
+	end
 end
