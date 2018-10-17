@@ -27,4 +27,8 @@ class TddDeRomanNumerals < Minitest::Test
 	def test_assert_V_returns_5
 		assert_equal(5, "V".deromanizer())
 	end
+
+	def test_assert_IX_returns_9
+		assert_equal(9, "IX".deromanizer())
+	end
 end
