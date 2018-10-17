@@ -5,8 +5,9 @@ class String
 			"I" => 1
 		}
 		result = 0
+		str = self
 		arabic.each do |key, value|
-			result += value
+			result += value * (str.scan(/#{key}/).count)
 		end
 		result
 	end
