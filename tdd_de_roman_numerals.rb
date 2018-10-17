@@ -15,7 +15,8 @@ class TddDeRomanNumerals < Minitest::Test
 		assert_equal(1, "I".deromanizer())
 	end
 
-	def test_assert_II_returns_2
+	def test_assert_II_returns_2_and_III_returns_3
 		assert_equal(2, "II".deromanizer())
+		assert_equal(3, "III".deromanizer())
 	end
 end
