@@ -69,4 +69,9 @@ class TddDeRomanNumerals < Minitest::Test
 		assert_equal(809, "DCCCIX".deromanizer())
 	end
 
+	def test_CM_returns_900
+		assert_equal(900, "CM".deromanizer())
+		assert_equal(950, "CML".deromanizer())
+		assert_equal(940, "CMXL".deromanizer())
+	end
 end
