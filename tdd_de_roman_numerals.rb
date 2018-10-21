@@ -77,5 +77,6 @@ class TddDeRomanNumerals < Minitest::Test
 
 	def test_M_returns_1000
 		assert_equal(1000, "M".deromanizer())
+		assert_equal(4000, "MMMM".deromanizer())
 	end
 end
