@@ -2,7 +2,9 @@ class String
 
 	def deromanizer()
 		arabic = {
+
 			"XC" => 90,
+			"C" => 100,
 			"XL" => 40,
 			"L" => 50,
 			"IX" => 9,
