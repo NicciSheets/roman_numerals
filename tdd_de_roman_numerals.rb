@@ -62,4 +62,11 @@ class TddDeRomanNumerals < Minitest::Test
 		assert_equal(404, "CDIV".deromanizer())
 		assert_equal(450, "CDL".deromanizer())
 	end
+
+	def test_D_returns_500
+		assert_equal(500, "D".deromanizer())
+		assert_equal(550, "DL".deromanizer())
+		assert_equal(809, "DCCCIX".deromanizer())
+	end
+
 end

@@ -17,7 +17,9 @@ class String
 		str = self
 		arabic.each do |key, value|
 			result += value * (str.scan(/#{key}/).count)
+			# p "result is #{result}"
 			temp = [key]
+			# p "temp is #{temp}"
             temp.each {|v| str.sub!(v, '')}
 		end
 		result
