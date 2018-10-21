@@ -74,4 +74,8 @@ class TddDeRomanNumerals < Minitest::Test
 		assert_equal(950, "CML".deromanizer())
 		assert_equal(940, "CMXL".deromanizer())
 	end
+
+	def test_M_returns_1000
+		assert_equal(1000, "M".deromanizer())
+	end
 end
